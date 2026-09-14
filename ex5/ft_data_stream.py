@@ -14,7 +14,7 @@ def gen_event() -> typing.Generator[tuple[str, str], None, None]:
         yield (name, action)
 
 
-gen = gen_event()
+gen: typing.Generator[tuple[str, str], None, None] = gen_event()
 
 for n in range(1000):
     name: str
