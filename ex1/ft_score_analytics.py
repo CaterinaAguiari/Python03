@@ -1,5 +1,6 @@
 import sys
 
+
 class QuantityError(Exception):
     def __init__(self, message: str = "No scores provided") -> None:
         super().__init__(message)
@@ -11,6 +12,7 @@ def count_len(argv: list) -> int:
     if count <= 0:
         raise QuantityError
     return count
+
 
 print("=== Player Score Analytics ===")
 

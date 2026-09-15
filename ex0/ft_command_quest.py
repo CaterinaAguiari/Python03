@@ -12,5 +12,5 @@ else:
         print(f"Argument {i}: {sys.argv[i]}")
         i = i + 1
         count = count - 1
-total_arg: int = len(sys.argv)
-print(f"Total arguments: {total_arg}")
+total_args: int = len(sys.argv)
+print(f"Total arguments: {total_args}")
