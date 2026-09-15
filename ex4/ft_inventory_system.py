@@ -47,10 +47,10 @@ for item in items:
     if inventory[item] < inventory[least_abundant]:
         least_abundant = item
 print(f"Item most abundant: {most_abundant}"
-      " with quantity {inventory[most_abundant]}"
+      f"with quantity {inventory[most_abundant]}"
       )
 print(f"Item least abundant: {least_abundant}"
-      " with quantity {inventory[least_abundant]}"
+      f"with quantity {inventory[least_abundant]}"
       )
 new_item: dict[str, int] = {"new": 1}
 inventory.update(new_item)
